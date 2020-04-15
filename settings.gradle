@@ -1,0 +1,2 @@
+rootProject.name='GmailAndroid'
+include ':app'

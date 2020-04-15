@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtViewImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/round_background"
+        android:text="T"
+        android:gravity="center"
+        android:textSize="32sp"
+        />
+    <TextView
+        android:id="@+id/txtViewName"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtViewImage"
+        android:text="Name"
+        android:padding="5dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/txtViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/txtViewDesc"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txtViewDesc"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_width="260dp"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewName"
+        android:layout_toRightOf="@+id/txtViewImage"/>
+
+    <ImageView
+        android:id="@+id/imgViewStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_star_normal"
+        android:layout_toRightOf="@+id/txtViewDesc"
+        android:layout_below="@+id/txtViewTime"
+        android:layout_alignParentRight="true"
+        android:padding="3dp"
+        />
+</RelativeLayout>
